@@ -14,7 +14,7 @@
  * optado por escribir una función para cada motor y así hacer el código más extensible y entendible*/
 
 int dyn_right_motor_read(uint8_t id,uint16_t *val){
-    return dyn_read(id,DYN_REG_SPEED,val);
+    return dyn_read(id,DYN_REG_SPEED,val);//
 }
 
 int dyn_left_motor_read(uint8_t id,uint16_t *val){
