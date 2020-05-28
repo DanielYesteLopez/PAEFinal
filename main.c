@@ -87,7 +87,7 @@ int main(void) {
     bitStringControl(1,bitStringMovement);
     dyn_right_motor_control(2,bitStringMovement);
     dyn_left_motor_control(1,bitStringMovement);
-
+    /*Empieza el programa entrega final*/
     //Testing some high level function
     printf("\nSetting LED to 0 \n");
     dyn_led_control(1, 0);

@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/danielyeste/Desktop/PAE/dyn/dyn_app_common.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o"
-  "/home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o"
-  "/home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o"
-  "/home/danielyeste/Desktop/PAE/dyn/dyn_frames.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_frames.c.o"
-  "/home/danielyeste/Desktop/PAE/dyn/dyn_instr.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_instr.c.o"
-  "/home/danielyeste/Desktop/PAE/dyn_test/b_queue.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn_test/b_queue.c.o"
-  "/home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o"
-  "/home/danielyeste/Desktop/PAE/dyn_test/movement_simulator.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o"
-  "/home/danielyeste/Desktop/PAE/hal_dyn_uart/hal_dyn_uart_emu.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o"
-  "/home/danielyeste/Desktop/PAE/joystick_emu/joystick.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/joystick_emu/joystick.c.o"
-  "/home/danielyeste/Desktop/PAE/main.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/main.c.o"
-  "/home/danielyeste/Desktop/PAE/posicion.c" "/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/posicion.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_common.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_motors.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_sensor.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_frames.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_frames.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_instr.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn/dyn_instr.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn_test/b_queue.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn_test/b_queue.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn_test/dyn_emu.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/dyn_test/movement_simulator.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/hal_dyn_uart/hal_dyn_uart_emu.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/joystick_emu/joystick.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/joystick_emu/joystick.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/main.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/main.c.o"
+  "/home/danielyeste/CLionProjects/PAEFinal/posicion.c" "/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/posicion.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

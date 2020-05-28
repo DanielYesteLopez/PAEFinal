@@ -1,3 +1,3 @@
-/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir
+/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir
