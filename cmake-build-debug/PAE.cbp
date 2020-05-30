@@ -8,165 +8,161 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/danielyeste/Desktop/PAE/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/danielyeste/Desktop/PAE/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/danielyeste/Desktop/PAE/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PAE">
-				<Option output="/home/danielyeste/Desktop/PAE/cmake-build-debug/PAE" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/danielyeste/Desktop/PAE/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/PAE.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/danielyeste/Desktop/PAE/."/>
-					<Add directory="/home/danielyeste/Desktop/PAE/dyn"/>
-					<Add directory="/home/danielyeste/Desktop/PAE/dyn_test"/>
-					<Add directory="/home/danielyeste/Desktop/PAE/hal_dyn_uart"/>
-					<Add directory="/home/danielyeste/Desktop/PAE/joystick_emu"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/."/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/hal_dyn_uart"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/joystick_emu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 PAE"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 PAE"/>
+					<CompileFile command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PAE/fast">
-				<Option output="/home/danielyeste/Desktop/PAE/cmake-build-debug/PAE" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/danielyeste/Desktop/PAE/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/PAE.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/danielyeste/Desktop/PAE/."/>
-					<Add directory="/home/danielyeste/Desktop/PAE/dyn"/>
-					<Add directory="/home/danielyeste/Desktop/PAE/dyn_test"/>
-					<Add directory="/home/danielyeste/Desktop/PAE/hal_dyn_uart"/>
-					<Add directory="/home/danielyeste/Desktop/PAE/joystick_emu"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/."/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/hal_dyn_uart"/>
+					<Add directory="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/joystick_emu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 PAE/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/danielyeste/Desktop/PAE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 PAE/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j6 -f &quot;/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_app_common.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_app_common.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_app_common.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_app_common.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_app_motors.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_app_motors.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_app_sensor.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_app_sensor.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_frames.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_frames.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_frames.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_frames.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_instr.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_instr.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn/dyn_instr.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn/dyn_instr.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn_test/b_queue.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test/b_queue.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn_test/b_queue.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test/b_queue.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test/dyn_emu.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test/dyn_emu.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn_test/movement_simulator.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test/movement_simulator.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/dyn_test/movement_simulator.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/dyn_test/movement_simulator.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/habitacion_001.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/habitacion_001.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/hal_dyn_uart/fake_msp.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/hal_dyn_uart/fake_msp.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/hal_dyn_uart/hal_dyn_uart_emu.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/hal_dyn_uart/hal_dyn_uart_emu.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/hal_dyn_uart/hal_dyn_uart_emu.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/hal_dyn_uart/hal_dyn_uart_emu.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/joystick_emu/joystick.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/joystick_emu/joystick.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/joystick_emu/joystick.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/joystick_emu/joystick.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/main.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/main.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/main.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/main.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/posicion.c">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/posicion.c">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/posicion.h">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/posicion.h">
 			<Option target="PAE"/>
 		</Unit>
-		<Unit filename="/home/danielyeste/Desktop/PAE/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Usuario/CLionProjects/PAEFinal/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -12,6 +12,7 @@
 #include "dyn/dyn_app_sensor.h"
 #include "dyn/dyn_app_motors.h"
 #include "habitacion_001.h"
+#include "dyn_instr.h"
 
 uint8_t estado = Ninguno, estado_anterior = Ninguno, finalizar = 0;
 uint32_t indice;
@@ -21,7 +22,9 @@ uint32_t indice;
  */
 int main(void) {
     pthread_t tid, jid;
-    uint8_t tmp;
+    uint8_t tmp, tmp_left, tmp_front, tmp_right;
+    struct data_values distancies;
+    _robot_pos_t robotPos;
 
     //Init queue for TX/RX data
     init_queue(&q_tx);
@@ -31,11 +34,23 @@ int main(void) {
     // Passing the room information to the dyn_emu thread
     pthread_create(&tid, NULL, dyn_emu, (void *) datos_habitacion);
     pthread_create(&jid, NULL, joystick_emu, (void *) &jid);
+
     void endlessTurn(){
         printf("Setting Endless turn \n");
         dyn_left_motor_control_endlessTurn(1,0);
         dyn_right_motor_control_endlessTurn(2,0);
     }
+
+   // calc_distance(tmp_left, tmp_front, tmp_right);  //Cridem al mÃ¨tode que calcula la distancia que llegeix el sensor, i guardem els resultats a "distancies".
+
+
+    //distance(&robotPos, &tmp_left, &tmp_front, &tmp_right);  //Cridem al metode que calcular la distancia dins el simulador. Li passem les dades guardades al robot
+    //A movement_simulator utlitza això per lelgir distancia, ns si es fer això nomes
+
+    //assert(tmp_front==0);
+    /* distance(&robotPos, &dyn_mem[SENSOR_MEM_ROW][DYN_REG__IR_LEFT],
+              &dyn_mem[SENSOR_MEM_ROW][DYN_REG__IR_CENTER],
+              &dyn_mem[SENSOR_MEM_ROW][DYN_REG__IR_RIGHT]);*/
     /*Motor 1->Izquierda
      * Motor2 -2 Derecha*/
     /*void testSensors(){
@@ -107,13 +122,24 @@ int main(void) {
     printf("En memoria: %I64u B = %I64u MiB\n", sizeof(datos_habitacion), sizeof(datos_habitacion) >> 20);
 
     printf("Pulsar 'q' para terminar, qualquier tecla para seguir\n");
-    fflush(stdout);//	return 0;
+    //fflush(stdout);//	return 0;
 
     while (estado != Quit) {
         if (simulator_finished) {
             break;
         }
         Get_estado(&estado, &estado_anterior);
+        dyn_left_distance(3,&tmp_left);
+        printf("Lectura sensor esquerre ");
+        printf("%d", tmp_left);
+
+        dyn_right_distance(3,&tmp_right);
+        printf("Lectura sensor dret ");
+        printf("%d", tmp_right);
+
+        dyn_front_distance(3,&tmp_front);
+        printf("Lectura sensor centre ");
+        printf("%d", tmp_front);
         if (estado != estado_anterior) {
             Set_estado_anterior(estado);
             printf("estado = %d\n", estado);

@@ -1,7 +1,7 @@
 /*
  * movement_simulator.c
  *
- *  Created on: 16 d’abr. 2020
+ *  Created on: 16 dï¿½abr. 2020
  *      Author: droma
  */
 
@@ -67,11 +67,13 @@ bool elapsed_time(clock_t t1, uint32_t milliseconds, int32_t *true_elapsed_time)
  * @param motor_id ID of the Dynamixel module
  */
 void _speed_dyn_2_speed_int(int16_t *v, uint8_t motor_id) {
-    *v = dyn_mem[motor_id][DYN_REG__GOAL_SPEED_L];
-    *v |= ((dyn_mem[motor_id][DYN_REG__GOAL_SPEED_H] & 0x03) << 8);
-    if (dyn_mem[motor_id][DYN_REG__GOAL_SPEED_H] & 0x04) {
+    *v = dyn_mem[motor_id][DYN_REG__GOAL_SPEED_H];
+    *v |= ((dyn_mem[motor_id][DYN_REG__GOAL_SPEED_L] & 0x03) << 8);
+    if (dyn_mem[motor_id][DYN_REG__GOAL_SPEED_L] & 0x04) {
         *v *= -1;
     }
+    printf("PACO\n");
+    printf("%d", *v);
 }
 
 /** Read the speed of the dynamixel modules and store them inside the position structure

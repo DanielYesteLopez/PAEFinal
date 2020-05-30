@@ -65,6 +65,7 @@ uint8_t obstaculo(uint16_t x, uint16_t y, const uint32_t *mundo) {
     return false;
 }
 
+//Transforma la distancia que llegeix al sensor, a las distancias del simulador
 void
 sensor_distance(uint16_t x0, uint16_t y0, float theta, const uint32_t *world, uint8_t *sensor_data, uint8_t dbg_msg) {
     float dx, dy; //incrementos del vector de desplazamiento en la direccion de un sensor

@@ -11,8 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/PAE.dir/joystick_emu/joystick.c.o"
   "CMakeFiles/PAE.dir/main.c.o"
   "CMakeFiles/PAE.dir/posicion.c.o"
-  "PAE"
+  "PAE.exe"
   "PAE.pdb"
+  "libPAE.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

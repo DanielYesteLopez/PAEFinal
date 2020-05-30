@@ -25,8 +25,8 @@ int dyn_left_distance(uint8_t id, uint8_t *val);
 int dyn_front_distance(uint8_t id, uint8_t *val);
 int dyn_right_distance(uint8_t id, uint8_t *val);
 
-//extern struct data_values sensor_distance(uint8_t tmp1, uint8_t tmp2, uint8_t tmp3);
-extern struct data_values sensor_light(uint8_t tmp1, uint8_t tmp2, uint8_t tmp3);
+extern void calc_distance(uint8_t tmp1, uint8_t tmp2, uint8_t tmp3);
+
 
 
 

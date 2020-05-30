@@ -52,6 +52,7 @@ CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o: ../hal_dyn_uart/hal_dyn_ua
 CMakeFiles/PAE.dir/joystick_emu/joystick.c.o: ../joystick_emu/joystick.c
 CMakeFiles/PAE.dir/joystick_emu/joystick.c.o: ../joystick_emu/joystick.h
 
+CMakeFiles/PAE.dir/main.c.o: ../dyn/dyn_instr.h
 CMakeFiles/PAE.dir/main.c.o: ../dyn_test/movement_simulator.h
 CMakeFiles/PAE.dir/main.c.o: ../posicion.h
 CMakeFiles/PAE.dir/main.c.o: ../dyn/dyn_app_common.h

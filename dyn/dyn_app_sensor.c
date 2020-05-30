@@ -24,24 +24,25 @@ int dyn_right_distance(uint8_t id, uint8_t *val){
     return dyn_read_byte(id, DYN_REG_RIGHTDISTANCE, val);
 }
 
-/*struct data_values sensor_distance(uint8_t tmp1, uint8_t tmp2, uint8_t tmp3){  //Mètode per llegir valors del sensor. Està en forma de struct ja que tenim 3 valors de distàncies dieferents. Per esquerre, centre i dreta.
+void calc_distance(uint8_t tmp1, uint8_t tmp2, uint8_t tmp3){  //Mètode per llegir valors del sensor. Està en forma de struct ja que tenim 3 valors de distàncies dieferents. Per esquerre, centre i dreta.
     struct data_values read;
 
     printf("Obtenim distància sensor esquerre\n");
-    dyn_left_distance(IDSENSOR_INFRA, &tmp1);  //Llegim el valor del sensor
-    read.left_data = tmp1;  //Guardem el valor que indica el sensor en la variable esquerre
+    dyn_left_distance(3, &tmp1);  //Llegim el valor del sensor
+    //read.left_data = tmp1;  //Guardem el valor que indica el sensor en la variable esquerre
 
     printf("Obtenim distància sensor centre\n");
-    dyn_front_distance(IDSENSOR_INFRA, &tmp2);  //Llegim el valor del sensor
-    read.front_data = tmp2;  //Guardem valor
+    dyn_front_distance(3, tmp2);  //Llegim el valor del sensor
+    //read.front_data = tmp2;  //Guardem valor
 
     printf("Obtenim distància sensor dret\n");
-    dyn_right_distance(IDSENSOR_INFRA, &tmp3);  //Llegim
-    read.right_data = tmp3; //Guardem valor
+    dyn_right_distance(3, tmp3);  //Llegim
+    //read.right_data = tmp3; //Guardem valor
 
-    return read;  //Retornem l'struct amb les distancies corresponents
+    //
+    // return read;  //Retornem l'struct amb les distancies corresponents
 
-}*/
+}
 
 
 
