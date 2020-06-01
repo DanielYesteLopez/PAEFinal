@@ -103,6 +103,7 @@ int main(void) {
     dyn_right_motor_control(2,bitStringMovement);
     dyn_left_motor_control(1,bitStringMovement);
 
+
     //Testing some high level function
     printf("\nSetting LED to 0 \n");
     dyn_led_control(1, 0);
@@ -122,6 +123,18 @@ int main(void) {
     printf("En memoria: %I64u B = %I64u MiB\n", sizeof(datos_habitacion), sizeof(datos_habitacion) >> 20);
 
     printf("Pulsar 'q' para terminar, qualquier tecla para seguir\n");
+
+    dyn_left_distance(3,&tmp_left);
+    printf("Lectura sensor esquerre ");
+    printf("%d", tmp_left);
+
+    dyn_right_distance(3,&tmp_right);
+    printf("Lectura sensor dret ");
+    printf("%d", tmp_right);
+
+    dyn_front_distance(3,&tmp_front);
+    printf("Lectura sensor centre ");
+    printf("%d", tmp_front);
     //fflush(stdout);//	return 0;
 
     while (estado != Quit) {

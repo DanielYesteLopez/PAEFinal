@@ -72,8 +72,7 @@ void _speed_dyn_2_speed_int(int16_t *v, uint8_t motor_id) {
     if (dyn_mem[motor_id][DYN_REG__GOAL_SPEED_L] & 0x04) {
         *v *= -1;
     }
-    printf("PACO\n");
-    printf("%d", *v);
+
 }
 
 /** Read the speed of the dynamixel modules and store them inside the position structure
