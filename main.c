@@ -21,7 +21,7 @@ uint32_t indice;
  */
 int main(void) {
     pthread_t tid, jid;
-    uint8_t tmp;
+    uint8_t tmp, tmp_left, tmp_front, tmp_right;
 
     //Init queue for TX/RX data
     init_queue(&q_tx);
@@ -108,7 +108,31 @@ int main(void) {
 
     printf("Pulsar 'q' para terminar, qualquier tecla para seguir\n");
     fflush(stdout);//	return 0;
-
+    /*Booleano para referirnos a si hemos encontrado la primera pared*/
+    bool firstWall = false;
+    /*Última pared que hemos detectado
+     * 0->Arriba
+     * 1->Derecha
+     * 2->Izquierda
+     * 3->Abajo*/
+    int lastWall = 0;
+    /*                   ->Pared Delante-> Giro derecha
+     * Pared Izquierda
+     *                   ->Pared Derecha + Pared delante ->Hacia adetras ***
+     *
+     *                   ->Pared Derecha -> Giro Izquierda
+     * Pared Delante     ->(Giramos derecha) Podemos escoger según la última pared
+     *                   ->Pared Izquierda ->Giro Derecha
+     *                   ->  Pared Delante-> Giro izquierda
+     *Pared Derecha
+     *                  ->Pared Derecha + Pared delante ->Hacia adetras ***
+     *                      Si !findWall{
+     *                          sigue el curso
+     *                      }
+     * No detectamos pared Si findWall {
+     *                          lastWall
+     *                      }
+     * */
     /*
      * i->UP
      * j->Left
@@ -119,8 +143,35 @@ int main(void) {
         if (simulator_finished) {
             break;
         }
-        Get_estado(&estado, &estado_anterior);
-        if (estado != estado_anterior) {
+        //Get_estado(&estado, &estado_anterior);
+        dyn_left_distance(3,&tmp_left);
+        /*printf("Lectura sensor esquerre ");
+        printf("%d", tmp_left);*/
+
+        dyn_right_distance(3,&tmp_right);
+        /*printf("Lectura sensor dret ");
+        printf("%d", tmp_right);*/
+
+        dyn_front_distance(3,&tmp_front);
+        /*printf("Lectura sensor centre ");
+        printf("%d", tmp_front);*/
+        if(!firstWall){
+            if((tmp_left<6) || (tmp_front<6) || (tmp_right<6)){
+                firstWall = true;
+            }
+        }
+        if(tmp_front<6){
+            bitStringControl(2,bitStringMovement);
+            dyn_right_motor_control(2,bitStringMovement);
+            while(tmp_front<250 && tmp_left<50) {
+                dyn_front_distance(3,&tmp_front);
+                dyn_left_distance(3,&tmp_left);
+
+                lastWall = 2;
+            }
+
+        }
+        /*if (estado != estado_anterior) {
             Set_estado_anterior(estado);
             printf("estado = %d\n", estado);
             switch (estado) {
@@ -175,7 +226,8 @@ int main(void) {
                     //etc, etc...
             }
             fflush(stdout);
-        }
+        }*/
+
     }
     //Signal the emulation thread to stop
     pthread_kill(tid, SIGTERM);
