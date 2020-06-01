@@ -81,6 +81,7 @@ sensor_distance(uint16_t x0, uint16_t y0, float theta, const uint32_t *world, ui
 
     dx = cos(theta);
     dy = sin(theta);
+
 #if DEBUG_LEVEL > 3
     printf("\n");
 #endif
