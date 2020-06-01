@@ -43,10 +43,10 @@ RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danielyeste/Desktop/PAE
+CMAKE_SOURCE_DIR = /home/danielyeste/CLionProjects/PAEFinal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danielyeste/Desktop/PAE/cmake-build-debug
+CMAKE_BINARY_DIR = /home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PAE.dir/depend.make
@@ -59,159 +59,159 @@ include CMakeFiles/PAE.dir/flags.make
 
 CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o: ../dyn/dyn_app_common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o   -c /home/danielyeste/Desktop/PAE/dyn/dyn_app_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_app_common.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_common.c
 
 CMakeFiles/PAE.dir/dyn/dyn_app_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn/dyn_app_common.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn/dyn_app_common.c > CMakeFiles/PAE.dir/dyn/dyn_app_common.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_common.c > CMakeFiles/PAE.dir/dyn/dyn_app_common.c.i
 
 CMakeFiles/PAE.dir/dyn/dyn_app_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn/dyn_app_common.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn/dyn_app_common.c -o CMakeFiles/PAE.dir/dyn/dyn_app_common.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_common.c -o CMakeFiles/PAE.dir/dyn/dyn_app_common.c.s
 
 CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o: ../dyn/dyn_app_sensor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o   -c /home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_sensor.c
 
 CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.c > CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_sensor.c > CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.i
 
 CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.c -o CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_sensor.c -o CMakeFiles/PAE.dir/dyn/dyn_app_sensor.c.s
 
 CMakeFiles/PAE.dir/dyn/dyn_frames.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn/dyn_frames.c.o: ../dyn/dyn_frames.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PAE.dir/dyn/dyn_frames.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_frames.c.o   -c /home/danielyeste/Desktop/PAE/dyn/dyn_frames.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PAE.dir/dyn/dyn_frames.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_frames.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_frames.c
 
 CMakeFiles/PAE.dir/dyn/dyn_frames.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn/dyn_frames.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn/dyn_frames.c > CMakeFiles/PAE.dir/dyn/dyn_frames.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_frames.c > CMakeFiles/PAE.dir/dyn/dyn_frames.c.i
 
 CMakeFiles/PAE.dir/dyn/dyn_frames.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn/dyn_frames.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn/dyn_frames.c -o CMakeFiles/PAE.dir/dyn/dyn_frames.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_frames.c -o CMakeFiles/PAE.dir/dyn/dyn_frames.c.s
 
 CMakeFiles/PAE.dir/dyn/dyn_instr.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn/dyn_instr.c.o: ../dyn/dyn_instr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PAE.dir/dyn/dyn_instr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_instr.c.o   -c /home/danielyeste/Desktop/PAE/dyn/dyn_instr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PAE.dir/dyn/dyn_instr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_instr.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_instr.c
 
 CMakeFiles/PAE.dir/dyn/dyn_instr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn/dyn_instr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn/dyn_instr.c > CMakeFiles/PAE.dir/dyn/dyn_instr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_instr.c > CMakeFiles/PAE.dir/dyn/dyn_instr.c.i
 
 CMakeFiles/PAE.dir/dyn/dyn_instr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn/dyn_instr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn/dyn_instr.c -o CMakeFiles/PAE.dir/dyn/dyn_instr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_instr.c -o CMakeFiles/PAE.dir/dyn/dyn_instr.c.s
 
 CMakeFiles/PAE.dir/dyn_test/b_queue.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn_test/b_queue.c.o: ../dyn_test/b_queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PAE.dir/dyn_test/b_queue.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn_test/b_queue.c.o   -c /home/danielyeste/Desktop/PAE/dyn_test/b_queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PAE.dir/dyn_test/b_queue.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn_test/b_queue.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn_test/b_queue.c
 
 CMakeFiles/PAE.dir/dyn_test/b_queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn_test/b_queue.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn_test/b_queue.c > CMakeFiles/PAE.dir/dyn_test/b_queue.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn_test/b_queue.c > CMakeFiles/PAE.dir/dyn_test/b_queue.c.i
 
 CMakeFiles/PAE.dir/dyn_test/b_queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn_test/b_queue.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn_test/b_queue.c -o CMakeFiles/PAE.dir/dyn_test/b_queue.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn_test/b_queue.c -o CMakeFiles/PAE.dir/dyn_test/b_queue.c.s
 
 CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o: ../dyn_test/dyn_emu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o   -c /home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn_test/dyn_emu.c
 
 CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.c > CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn_test/dyn_emu.c > CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.i
 
 CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.c -o CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn_test/dyn_emu.c -o CMakeFiles/PAE.dir/dyn_test/dyn_emu.c.s
 
 CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o: ../dyn_test/movement_simulator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o   -c /home/danielyeste/Desktop/PAE/dyn_test/movement_simulator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn_test/movement_simulator.c
 
 CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn_test/movement_simulator.c > CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn_test/movement_simulator.c > CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.i
 
 CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn_test/movement_simulator.c -o CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn_test/movement_simulator.c -o CMakeFiles/PAE.dir/dyn_test/movement_simulator.c.s
 
 CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o: ../hal_dyn_uart/hal_dyn_uart_emu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o   -c /home/danielyeste/Desktop/PAE/hal_dyn_uart/hal_dyn_uart_emu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/hal_dyn_uart/hal_dyn_uart_emu.c
 
 CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/hal_dyn_uart/hal_dyn_uart_emu.c > CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/hal_dyn_uart/hal_dyn_uart_emu.c > CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.i
 
 CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/hal_dyn_uart/hal_dyn_uart_emu.c -o CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/hal_dyn_uart/hal_dyn_uart_emu.c -o CMakeFiles/PAE.dir/hal_dyn_uart/hal_dyn_uart_emu.c.s
 
 CMakeFiles/PAE.dir/joystick_emu/joystick.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/joystick_emu/joystick.c.o: ../joystick_emu/joystick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/PAE.dir/joystick_emu/joystick.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/joystick_emu/joystick.c.o   -c /home/danielyeste/Desktop/PAE/joystick_emu/joystick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/PAE.dir/joystick_emu/joystick.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/joystick_emu/joystick.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/joystick_emu/joystick.c
 
 CMakeFiles/PAE.dir/joystick_emu/joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/joystick_emu/joystick.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/joystick_emu/joystick.c > CMakeFiles/PAE.dir/joystick_emu/joystick.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/joystick_emu/joystick.c > CMakeFiles/PAE.dir/joystick_emu/joystick.c.i
 
 CMakeFiles/PAE.dir/joystick_emu/joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/joystick_emu/joystick.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/joystick_emu/joystick.c -o CMakeFiles/PAE.dir/joystick_emu/joystick.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/joystick_emu/joystick.c -o CMakeFiles/PAE.dir/joystick_emu/joystick.c.s
 
 CMakeFiles/PAE.dir/main.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/PAE.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/main.c.o   -c /home/danielyeste/Desktop/PAE/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/PAE.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/main.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/main.c
 
 CMakeFiles/PAE.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/main.c > CMakeFiles/PAE.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/main.c > CMakeFiles/PAE.dir/main.c.i
 
 CMakeFiles/PAE.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/main.c -o CMakeFiles/PAE.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/main.c -o CMakeFiles/PAE.dir/main.c.s
 
 CMakeFiles/PAE.dir/posicion.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/posicion.c.o: ../posicion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PAE.dir/posicion.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/posicion.c.o   -c /home/danielyeste/Desktop/PAE/posicion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PAE.dir/posicion.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/posicion.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/posicion.c
 
 CMakeFiles/PAE.dir/posicion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/posicion.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/posicion.c > CMakeFiles/PAE.dir/posicion.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/posicion.c > CMakeFiles/PAE.dir/posicion.c.i
 
 CMakeFiles/PAE.dir/posicion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/posicion.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/posicion.c -o CMakeFiles/PAE.dir/posicion.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/posicion.c -o CMakeFiles/PAE.dir/posicion.c.s
 
 CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o: CMakeFiles/PAE.dir/flags.make
 CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o: ../dyn/dyn_app_motors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o   -c /home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o   -c /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_motors.c
 
 CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.c > CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_motors.c > CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.i
 
 CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.c -o CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_motors.c -o CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.s
 
 # Object files for target PAE
 PAE_OBJECTS = \
@@ -245,7 +245,7 @@ PAE: CMakeFiles/PAE.dir/posicion.c.o
 PAE: CMakeFiles/PAE.dir/dyn/dyn_app_motors.c.o
 PAE: CMakeFiles/PAE.dir/build.make
 PAE: CMakeFiles/PAE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable PAE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable PAE"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PAE.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -258,6 +258,6 @@ CMakeFiles/PAE.dir/clean:
 .PHONY : CMakeFiles/PAE.dir/clean
 
 CMakeFiles/PAE.dir/depend:
-	cd /home/danielyeste/Desktop/PAE/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danielyeste/Desktop/PAE /home/danielyeste/Desktop/PAE /home/danielyeste/Desktop/PAE/cmake-build-debug /home/danielyeste/Desktop/PAE/cmake-build-debug /home/danielyeste/Desktop/PAE/cmake-build-debug/CMakeFiles/PAE.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danielyeste/CLionProjects/PAEFinal /home/danielyeste/CLionProjects/PAEFinal /home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug /home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug /home/danielyeste/CLionProjects/PAEFinal/cmake-build-debug/CMakeFiles/PAE.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PAE.dir/depend
 

@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/danielyeste/Desktop/PAE/. -I/home/danielyeste/Desktop/PAE/dyn -I/home/danielyeste/Desktop/PAE/dyn_test -I/home/danielyeste/Desktop/PAE/hal_dyn_uart -I/home/danielyeste/Desktop/PAE/joystick_emu 
+C_INCLUDES = -I/home/danielyeste/CLionProjects/PAEFinal/. -I/home/danielyeste/CLionProjects/PAEFinal/dyn -I/home/danielyeste/CLionProjects/PAEFinal/dyn_test -I/home/danielyeste/CLionProjects/PAEFinal/hal_dyn_uart -I/home/danielyeste/CLionProjects/PAEFinal/joystick_emu 
 

@@ -22,25 +22,25 @@ stdbool.h
 dyn_test/movement_simulator.h
 ../dyn_test/movement_simulator.h
 
-/home/danielyeste/Desktop/PAE/dyn/dyn_app_common.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_common.h
 stdbool.h
 -
 stdint.h
 -
 
-/home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_motors.h
 stdbool.h
 -
 stdint.h
 -
 
-/home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_sensor.h
 stdio.h
 -
 stdint.h
 -
 
-/home/danielyeste/Desktop/PAE/dyn_test/b_queue.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn_test/b_queue.h
 stdint.h
 -
 stdbool.h
@@ -48,21 +48,21 @@ stdbool.h
 pthread.h
 -
 
-/home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn_test/dyn_emu.h
 stdint.h
 -
 stdbool.h
 -
 
-/home/danielyeste/Desktop/PAE/habitacion_001.h
+/home/danielyeste/CLionProjects/PAEFinal/habitacion_001.h
 stdint.h
 -
 
-/home/danielyeste/Desktop/PAE/joystick_emu/joystick.h
+/home/danielyeste/CLionProjects/PAEFinal/joystick_emu/joystick.h
 stdint.h
 -
 
-/home/danielyeste/Desktop/PAE/main.c
+/home/danielyeste/CLionProjects/PAEFinal/main.c
 pthread.h
 -
 signal.h
@@ -74,21 +74,21 @@ posicion.h
 stdio.h
 -
 main.h
-/home/danielyeste/Desktop/PAE/main.h
+/home/danielyeste/CLionProjects/PAEFinal/main.h
 dyn/dyn_app_common.h
-/home/danielyeste/Desktop/PAE/dyn/dyn_app_common.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_common.h
 dyn_test/dyn_emu.h
-/home/danielyeste/Desktop/PAE/dyn_test/dyn_emu.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn_test/dyn_emu.h
 dyn_test/b_queue.h
-/home/danielyeste/Desktop/PAE/dyn_test/b_queue.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn_test/b_queue.h
 joystick_emu/joystick.h
-/home/danielyeste/Desktop/PAE/joystick_emu/joystick.h
+/home/danielyeste/CLionProjects/PAEFinal/joystick_emu/joystick.h
 dyn/dyn_app_sensor.h
-/home/danielyeste/Desktop/PAE/dyn/dyn_app_sensor.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_sensor.h
 dyn/dyn_app_motors.h
-/home/danielyeste/Desktop/PAE/dyn/dyn_app_motors.h
+/home/danielyeste/CLionProjects/PAEFinal/dyn/dyn_app_motors.h
 habitacion_001.h
-/home/danielyeste/Desktop/PAE/habitacion_001.h
+/home/danielyeste/CLionProjects/PAEFinal/habitacion_001.h
 
-/home/danielyeste/Desktop/PAE/main.h
+/home/danielyeste/CLionProjects/PAEFinal/main.h
 

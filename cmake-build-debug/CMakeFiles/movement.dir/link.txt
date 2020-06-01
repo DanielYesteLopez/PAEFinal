@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmovement.a  CMakeFiles/movement.dir/dyn_test/movement_simulator.c.o
-/usr/bin/ranlib libmovement.a

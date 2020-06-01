@@ -81,13 +81,13 @@ int main(void) {
     /*bitStringMovement es la cadena de strings que iremos manipulando por tal de
      * enviar los  dos paquetes de 8 bits que se necesitan para controlar tanto la dirección
      * como la velocidad en el modo endless turn ya establecido.*/
-    uint8_t bitStringMovement[2]={0x4,0X3F};
+    uint8_t bitStringMovement[2]={0x4,0XFF};
     /*Por defecto, el robot se moverá hacia adelante, así que mandaremos los respectivos
      * paquetes a ambos motores con el string de bits correspondiendte*/
     bitStringControl(1,bitStringMovement);
     dyn_right_motor_control(2,bitStringMovement);
     dyn_left_motor_control(1,bitStringMovement);
-
+    /*Empieza el programa entrega final*/
     //Testing some high level function
     printf("\nSetting LED to 0 \n");
     dyn_led_control(1, 0);
@@ -109,6 +109,12 @@ int main(void) {
     printf("Pulsar 'q' para terminar, qualquier tecla para seguir\n");
     fflush(stdout);//	return 0;
 
+    /*
+     * i->UP
+     * j->Left
+     * k->Center
+     * l->Right
+     * m->Down*/
     while (estado != Quit) {
         if (simulator_finished) {
             break;
