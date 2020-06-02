@@ -139,6 +139,8 @@ int main(void) {
      * k->Center
      * l->Right
      * m->Down*/
+    int i = 0;
+
     while (estado != Quit) {
         if (simulator_finished) {
             break;
@@ -156,21 +158,61 @@ int main(void) {
         /*printf("Lectura sensor centre ");
         printf("%d", tmp_front);*/
         if(!firstWall){
-            if((tmp_left<6) || (tmp_front<6) || (tmp_right<6)){
+            if((tmp_left<=10) || (tmp_front<=10) || (tmp_right<=10)){
                 firstWall = true;
             }
         }
-        if(tmp_front<6){
+
+        if(tmp_front <= 10){
+            /*Decrease speed*/
+            bitStringControl(3,bitStringMovement);
+            bitStringControl(3,bitStringMovement);
+            dyn_right_motor_control(2,bitStringMovement);
+            dyn_left_motor_control(1,bitStringMovement);
+            /*Giro derecha*/
             bitStringControl(2,bitStringMovement);
             dyn_right_motor_control(2,bitStringMovement);
-            while(tmp_front<250 && tmp_left<50) {
+            while(tmp_front <= 210 && tmp_left >= 6){
                 dyn_front_distance(3,&tmp_front);
                 dyn_left_distance(3,&tmp_left);
-
-                lastWall = 2;
             }
-
+            /*Frontal*/
+            bitStringControl(1,bitStringMovement);
+            dyn_right_motor_control(2,bitStringMovement);
+            /*Increase speed*/
+            bitStringControl(4,bitStringMovement);
+            bitStringControl(4,bitStringMovement);
+            dyn_right_motor_control(2,bitStringMovement);
+            dyn_left_motor_control(1,bitStringMovement);
+            lastWall = 2;
         }
+        if(tmp_front>240 && tmp_left>240 && tmp_right>240 && firstWall){
+            if(lastWall == 0){
+
+            }else if(lastWall == 1){
+
+            }else if(lastWall == 2){
+                /*Decrease speed*/
+                bitStringControl(3,bitStringMovement);
+                bitStringControl(3,bitStringMovement);
+                dyn_right_motor_control(2,bitStringMovement);
+                dyn_left_motor_control(1,bitStringMovement);
+                /*Giro izquierda*/
+                bitStringControl(2,bitStringMovement);
+                dyn_left_motor_control(1,bitStringMovement);
+                while(tmp_left<=6) {
+                    dyn_left_distance(3, &tmp_left);
+                }
+                /*Recto*/
+                bitStringControl(1,bitStringMovement);
+                dyn_left_motor_control(1,bitStringMovement);
+                bitStringControl(4,bitStringMovement);
+                bitStringControl(4,bitStringMovement);
+                dyn_right_motor_control(2,bitStringMovement);
+                dyn_left_motor_control(1,bitStringMovement);
+            }
+        }
+
         /*if (estado != estado_anterior) {
             Set_estado_anterior(estado);
             printf("estado = %d\n", estado);
