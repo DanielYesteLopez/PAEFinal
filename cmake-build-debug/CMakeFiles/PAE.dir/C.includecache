@@ -73,6 +73,8 @@ posicion.h
 -
 stdio.h
 -
+time.h
+-
 main.h
 /home/danielyeste/CLionProjects/PAEFinal/main.h
 dyn/dyn_app_common.h
