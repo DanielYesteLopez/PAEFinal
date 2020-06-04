@@ -190,13 +190,14 @@ int main(void) {
 
         }
         /*Encontramos objeto izquierda*/
-        if(tmp_left <=6){
+
+        if(tmp_left <=10){
             /*Decrease speed*/
             bitStringControl(3,bitStringMovement);
             bitStringControl(3,bitStringMovement);
             dyn_right_motor_control(2,bitStringMovement);
-            while(tmp_left<= 6){
-                dyn_left_distance(3,&tmp_left);
+            while(tmp_front<= 15){
+                dyn_front_distance(3,&tmp_front);
             }
             /*Increase speed*/
             bitStringControl(4,bitStringMovement);
