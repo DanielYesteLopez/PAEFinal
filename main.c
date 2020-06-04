@@ -161,55 +161,48 @@ int main(void) {
                 firstWall = true;
             }
         }
-        /*Pared frontal con pared a la izquierda.
-         * Giro Derecha*/
-        if(tmp_front <= 10 && tmp_right>50){
+        /*Encontramos pared delante*/
+        if(tmp_front<=10){
             /*Decrease speed*/
             bitStringControl(3,bitStringMovement);
             bitStringControl(3,bitStringMovement);
-            dyn_right_motor_control(2,bitStringMovement);
             dyn_left_motor_control(1,bitStringMovement);
-            /*Giro derecha*/
+            dyn_right_motor_control(2,bitStringMovement);
+            /*Giro izquierda*/
             bitStringControl(2,bitStringMovement);
             dyn_right_motor_control(2,bitStringMovement);
-            while(tmp_front <= 20 && tmp_left >= 6){
-                dyn_front_distance(3,&tmp_front);
+            while(tmp_left<=10){
                 dyn_left_distance(3,&tmp_left);
-            }
-            /*Recto*/
-            bitStringControl(1,bitStringMovement);
-            dyn_right_motor_control(2,bitStringMovement);
-            /*Increase speed*/
-            bitStringControl(4,bitStringMovement);
-            bitStringControl(4,bitStringMovement);
-            dyn_right_motor_control(2,bitStringMovement);
-            dyn_left_motor_control(1,bitStringMovement);
-            lastWall = 2;
-
-        }
-        if(tmp_left<= 6){
-            /*Decrease speed*/
-            bitStringControl(3,bitStringMovement);
-            bitStringControl(3,bitStringMovement);
-            dyn_right_motor_control(2,bitStringMovement);
-            dyn_left_motor_control(1,bitStringMovement);
-            /*Giro derecha*/
-            bitStringControl(2,bitStringMovement);
-            dyn_right_motor_control(2,bitStringMovement);
-            while(tmp_left<= 8 && tmp_front >= 8){
-                dyn_left_distance(3,&tmp_left);
-                dyn_front_distance(3,&tmp_front);
             }
             /*Frontal*/
             bitStringControl(1,bitStringMovement);
             dyn_right_motor_control(2,bitStringMovement);
             /*Increase speed*/
             bitStringControl(4,bitStringMovement);
-            bitStringControl(4,bitStringMovement);
             dyn_right_motor_control(2,bitStringMovement);
+            bitStringControl(4,bitStringMovement);
             dyn_left_motor_control(1,bitStringMovement);
             lastWall = 2;
 
+        }
+        /*Encontramos pared derecha*/
+        if(tmp_right<=6){
+
+        }
+        /*Encontramos objeto izquierda*/
+        if(tmp_left <=6){
+            /*Decrease speed*/
+            bitStringControl(3,bitStringMovement);
+            bitStringControl(3,bitStringMovement);
+            dyn_right_motor_control(2,bitStringMovement);
+            while(tmp_left<= 6){
+                dyn_left_distance(3,&tmp_left);
+            }
+            /*Increase speed*/
+            bitStringControl(4,bitStringMovement);
+            bitStringControl(4,bitStringMovement);
+            dyn_right_motor_control(2,bitStringMovement);
+            lastWall = 2;
         }
         if(tmp_front>15 && tmp_left>15 && tmp_right>15 && firstWall){
             if(lastWall == 0){
@@ -225,7 +218,7 @@ int main(void) {
                 /*Turn left*/
                 bitStringControl(2,bitStringMovement);
                 dyn_left_motor_control(1,bitStringMovement);
-                while(tmp_front>30) {
+                while(tmp_left>255) {
                     dyn_front_distance(3,&tmp_front);
                 }
                 /*Straight*/
@@ -233,8 +226,8 @@ int main(void) {
                 dyn_left_motor_control(1,bitStringMovement);
                 /*Increase speed*/
                 bitStringControl(4,bitStringMovement);
-                dyn_right_motor_control(2,bitStringMovement);
                 bitStringControl(4,bitStringMovement);
+                dyn_right_motor_control(2,bitStringMovement);
                 dyn_left_motor_control(1,bitStringMovement);
                 lastWall = 2;
             }
