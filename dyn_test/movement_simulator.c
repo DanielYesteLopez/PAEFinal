@@ -161,6 +161,7 @@ void init_movement_simulator(const uint32_t *world) {
     simulator_finished = false;
 
     t_last_upd = clock();
+    update_sensor_data();
 
 #if DEBUG_LEVEL > 2
     fichero = fopen(OUTPUT_FILE, "w+"); //creacion del fichero de salida, en escritura

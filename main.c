@@ -4,6 +4,7 @@
 #include <posicion.h>
 #include <stdio.h>
 #include <time.h>
+#include <zconf.h>
 
 #include "main.h"
 #include "dyn/dyn_app_common.h"
@@ -140,6 +141,7 @@ int main(void) {
      * k->Center
      * l->Right
      * m->Down*/
+
     while (estado != Quit) {
         if (simulator_finished) {
             break;
@@ -161,6 +163,7 @@ int main(void) {
                 firstWall = true;
             }
         }
+        /*Encontramos pared delante*/
         /*Encontramos pared delante*/
         if(tmp_front<=10){
             /*Decrease speed*/
@@ -186,9 +189,7 @@ int main(void) {
 
         }
         /*Encontramos pared derecha*/
-        if(tmp_right<=6){
 
-        }
         /*Encontramos objeto izquierda*/
 
         if(tmp_left <=10){
@@ -219,7 +220,7 @@ int main(void) {
                 /*Turn left*/
                 bitStringControl(2,bitStringMovement);
                 dyn_left_motor_control(1,bitStringMovement);
-                while(tmp_left>255) {
+                while(tmp_front>20) {
                     dyn_front_distance(3,&tmp_front);
                 }
                 /*Straight*/
