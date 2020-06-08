@@ -75,6 +75,8 @@ stdio.h
 -
 time.h
 -
+zconf.h
+-
 main.h
 /home/danielyeste/CLionProjects/PAEFinal/main.h
 dyn/dyn_app_common.h
