@@ -153,8 +153,8 @@ int main(void) {
                 dyn_right_motor_control(2, bitStringMovement);
                 /*Increase speed*/
                 bitStringControl(4, bitStringMovement);
-                dyn_right_motor_control(2, bitStringMovement);
                 bitStringControl(4, bitStringMovement);
+                dyn_right_motor_control(2, bitStringMovement);
                 dyn_left_motor_control(1, bitStringMovement);
                 lastWall = 2;
 
@@ -189,6 +189,17 @@ int main(void) {
                 bitStringControl(4, bitStringMovement);
                 dyn_left_motor_control(1, bitStringMovement);
                 lastWall = 1;
+            }else if((tmp_front <= 10) && (tmp_left <= 10) && (tmp_right <= 10) ) {
+                bitStringControl(2, bitStringMovement);
+                dyn_right_motor_control(2, bitStringMovement);
+                dyn_left_motor_control(1, bitStringMovement);
+                while(tmp_right<15 || tmp_left<15){
+                    dyn_left_distance(3,&tmp_left);
+                    dyn_right_distance(3,&tmp_right);
+                }
+                /*Turn left to find the wall*/
+                bitStringControl(2, bitStringMovement);
+                dyn_left_motor_control(1, bitStringMovement);
             }
 
             if (tmp_front > 15 && tmp_left > 15 && tmp_right > 15) {
