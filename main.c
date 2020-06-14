@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <zconf.h>
+#include <math.h>
 
 #include "main.h"
 #include "dyn/dyn_app_common.h"
@@ -21,14 +22,19 @@ uint32_t indice;
 /**
  * main.c
  */
-void endlessTurn(){
+void endlessTurn() {
     printf("Setting Endless turn \n");
-    dyn_left_motor_control_endlessTurn(1,0);
-    dyn_right_motor_control_endlessTurn(2,0);
+    dyn_left_motor_control_endlessTurn(1, 0);
+    dyn_right_motor_control_endlessTurn(2, 0);
 }
+
+int calculoDistanciaGir(int sensorFrontal, int sensorLateral) {
+    return (sensorFrontal * sensorLateral) /(sqrt(pow(sensorFrontal, 2) + pow(sensorLateral, 2))) ;
+}
+
 int main(void) {
     pthread_t tid, jid;
-    uint8_t tmp, tmp_left, tmp_front, tmp_right;
+    uint8_t tmp_left, tmp_front, tmp_right;
 
     //Init queue for TX/RX data
     init_queue(&q_tx);
@@ -46,12 +52,12 @@ int main(void) {
     /*bitStringMovement es la cadena de strings que iremos manipulando por tal de
      * enviar los  dos paquetes de 8 bits que se necesitan para controlar tanto la dirección
      * como la velocidad en el modo endless turn ya establecido.*/
-    uint8_t bitStringMovement[2]={0x4,0XFF};
+    uint8_t bitStringMovement[2] = {0x4, 0XFF};
     /*Por defecto, el robot se moverá hacia adelante, así que mandaremos los respectivos
      * paquetes a ambos motores con el string de bits correspondiendte*/
-    bitStringControl(1,bitStringMovement);
-    dyn_right_motor_control(2,bitStringMovement);
-    dyn_left_motor_control(1,bitStringMovement);
+    bitStringControl(1, bitStringMovement);
+    dyn_right_motor_control(2, bitStringMovement);
+    dyn_left_motor_control(1, bitStringMovement);
     /*Empieza el programa entrega final*/
 
     printf("\n************************\n");
@@ -70,6 +76,8 @@ int main(void) {
      * 2->Izquierda
      * 3->Abajo*/
     int lastWall = 0;
+    int calculateExactTurn = 0;
+    int c = 0;
     /*                   ->Pared Delante-> Giro derecha
      * Pared Izquierda
      *                   ->Pared Derecha + Pared delante ->Hacia adetras ***
@@ -98,18 +106,13 @@ int main(void) {
         if (simulator_finished) {
             estado = Quit;
         } else {
-            //Get_estado(&estado, &estado_anterior);
+            Get_estado(&estado, &estado_anterior);
             dyn_left_distance(3, &tmp_left);
-            /*printf("Lectura sensor esquerre ");
-            printf("%d", tmp_left);*/
+
 
             dyn_right_distance(3, &tmp_right);
-            /*printf("Lectura sensor dret ");
-            printf("%d", tmp_right);*/
 
             dyn_front_distance(3, &tmp_front);
-            /*printf("Lectura sensor centre ");
-            printf("%d", tmp_front);*/
             if (!firstWall) {
                 /*Decrease speed*/
                 bitStringControl(3, bitStringMovement);
@@ -133,47 +136,61 @@ int main(void) {
                 dyn_left_motor_control(1, bitStringMovement);
             }
             /*Encontramos pared delante*/
-            if (tmp_front <= 10 && tmp_left > 10) {
+            if ((tmp_front <= 10) && (tmp_left > 10) && (tmp_right > 10)) {
                 /*Decrease speed*/
                 bitStringControl(3, bitStringMovement);
                 bitStringControl(3, bitStringMovement);
-                dyn_left_motor_control(1, bitStringMovement);
                 dyn_right_motor_control(2, bitStringMovement);
-                /*Giro derecha*/
+                dyn_left_motor_control(1, bitStringMovement);
+                /*Turn right*/
                 bitStringControl(2, bitStringMovement);
                 dyn_right_motor_control(2, bitStringMovement);
-                while (tmp_front <= 15) {
+                while (tmp_front <= 20) {
                     dyn_front_distance(3, &tmp_front);
-                }
-                while (tmp_left <= 10) {
                     dyn_left_distance(3, &tmp_left);
                 }
-                /*Frontal*/
-                bitStringControl(1, bitStringMovement);
-                dyn_right_motor_control(2, bitStringMovement);
-                /*Increase speed*/
-                bitStringControl(4, bitStringMovement);
-                bitStringControl(4, bitStringMovement);
-                dyn_right_motor_control(2, bitStringMovement);
-                dyn_left_motor_control(1, bitStringMovement);
-                lastWall = 2;
+                if (tmp_front > 100) {
+                    /*Straight*/
+                    bitStringControl(1, bitStringMovement);
+                    dyn_right_motor_control(2, bitStringMovement);
+                    /*Increase speed*/
+                    bitStringControl(4, bitStringMovement);
+                    bitStringControl(4, bitStringMovement);
+                    dyn_left_motor_control(1, bitStringMovement);
+
+                } else {
+                    calculateExactTurn = calculoDistanciaGir(tmp_front, tmp_left);
+                    while (tmp_left < calculateExactTurn) {
+                        dyn_left_distance(3, &tmp_left);
+                    }
+                    /*Straight*/
+                    bitStringControl(1, bitStringMovement);
+                    dyn_right_motor_control(2, bitStringMovement);
+                    /*Increase speed*/
+                    bitStringControl(4, bitStringMovement);
+                    bitStringControl(4, bitStringMovement);
+                    dyn_right_motor_control(2, bitStringMovement);
+                    dyn_left_motor_control(1, bitStringMovement);
+                    lastWall = 2;
+                }
 
             }
                 /*Encontramos objeto izquierda*/
 
             else if (tmp_left <= 10) {
-                /*Decrease speed*/
-                bitStringControl(3, bitStringMovement);
-                bitStringControl(3, bitStringMovement);
-                dyn_right_motor_control(2, bitStringMovement);
-                while (tmp_front <= 20) {
-                    dyn_front_distance(3, &tmp_front);
-                }
-                /*Increase speed*/
-                bitStringControl(4, bitStringMovement);
-                bitStringControl(4, bitStringMovement);
-                dyn_right_motor_control(2, bitStringMovement);
-                lastWall = 2;
+                    /*Decrease speed*/
+                    bitStringControl(3, bitStringMovement);
+                    bitStringControl(3, bitStringMovement);
+                    dyn_right_motor_control(2, bitStringMovement);
+                    while (tmp_left < 10) {
+                        dyn_left_distance(3, &tmp_left);
+                    }
+                    /*Increase speed*/
+                    bitStringControl(4, bitStringMovement);
+                    bitStringControl(4, bitStringMovement);
+                    dyn_right_motor_control(2, bitStringMovement);
+                    lastWall = 2;
+
             }
                 /*Encontramos pared derecha*/
             else if (tmp_right <= 10) {
@@ -181,27 +198,26 @@ int main(void) {
                 bitStringControl(3, bitStringMovement);
                 bitStringControl(3, bitStringMovement);
                 dyn_left_motor_control(1, bitStringMovement);
-                while (tmp_front <= 20) {
-                    dyn_front_distance(3, &tmp_front);
+                while (tmp_right <= 10) {
+                    dyn_right_distance(3, &tmp_right);
                 }
                 /*Increase speed*/
                 bitStringControl(4, bitStringMovement);
                 bitStringControl(4, bitStringMovement);
                 dyn_left_motor_control(1, bitStringMovement);
                 lastWall = 1;
-            }else if((tmp_front <= 10) && (tmp_left <= 10) && (tmp_right <= 10) ) {
+            } else if ((tmp_front <= 10) && (tmp_left <= 10) && (tmp_right <= 10)) {
                 bitStringControl(2, bitStringMovement);
                 dyn_right_motor_control(2, bitStringMovement);
                 dyn_left_motor_control(1, bitStringMovement);
-                while(tmp_right<15 || tmp_left<15){
-                    dyn_left_distance(3,&tmp_left);
-                    dyn_right_distance(3,&tmp_right);
+                while (tmp_right < 15 || tmp_left < 15) {
+                    dyn_left_distance(3, &tmp_left);
+                    dyn_right_distance(3, &tmp_right);
                 }
                 /*Turn left to find the wall*/
                 bitStringControl(2, bitStringMovement);
                 dyn_left_motor_control(1, bitStringMovement);
             }
-
             if (tmp_front > 15 && tmp_left > 15 && tmp_right > 15) {
                 if (lastWall == 0) {
 

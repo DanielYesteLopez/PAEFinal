@@ -16,6 +16,7 @@
  */
 #define DEBUG_LEVEL 3
 void endlessTurn();
+int calculoDistanciaGir(int sensorFrontal,int sensorLateral);
 
 
 #endif /* MAIN_H_ */
